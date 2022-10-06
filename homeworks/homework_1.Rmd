@@ -1,0 +1,76 @@
+---
+title: "Homework One"
+output: html_document
+---
+# AMW: Nice work! 10/10
+## Homework One
+
+### Due Aug. 26th at 5pm. Simply write your answers in and save in the homeworks folder in your Rstudio.
+
+This is going to be a low-stakes effort to get you comfortable with RStudio and RMarkdown. First, you're going to download the RMarkdown Document for this homework. Copy and paste this command into the console of your RStudio instance.
+
+```{r, eval=FALSE}
+download.file(url = "https://raw.githubusercontent.com/BiologicalDataAnalysis2019/2022/main/vignettes/homework_1.Rmd", destfile = "/cloud/project/homeworks/homework_1.Rmd")
+```
+
+Can you find where the file downloaded to? Look at the help entry for `download.file` if you aren't sure.
+
+Open the file and answer these two questions: 
+
+1. (1pt) What does `download.file` do? 
+
+```
+'download.file', is a function that downloads a file.
+```
+
+2. (1pt) Where did your HW1.Rmd file download to? 
+
+```
+The HW1.Rmd downloaded into the homeworks folder inside the project folder which is inside of the cloud file. As seen by the code designator, destfile = "/cloud/project/homeworks/homework_1.Rmd"
+```
+
+Next, we're going to try to execute some code in an RMarkdown document. Press the green triangle.
+1. In this code the concatenate function is being used, which is linking together animals(cat, rat, and dog), while also linking  weights (15, 1, and 120). 
+2. Using the brackets (indexs the data) following the function c(with some list of integers) this will spit out the numerical ordering of the concatenated groups. 1st, 2nd, 3rd, and so on. 
+For example animals[c(1,3)] gives the 1st and third objects (cat and dog). 
+```{r}
+animals <- c("cat", "rat", "dog")
+weights <- c(15, 1, 120)
+animals[c(1,3)]
+weights[c(1,3)]
+animals[c(1,5)]
+```
+
+What just happened? Annotate the above code with two comments (each worth one point) explaining the code.
+
+We can also embed plots in RMarkdown. The below code should embed a barplot. Not very useful, but let me know if you don't see one show up in your file.
+
+```{r}
+barplot(names.arg=animals, height=weights)
+```
+
+Did the plot show up OK?
+
+```
+Yes it did.
+
+```
+
+## Getting to know you all
+
+For the remainder of the assignment, I need to know three things.
+
+1. What type of data will you be working with for your thesis or research project? For example: matrices of phylogenetic characters, spreadsheets of ecological observations, shapefiles from 3D scanning, etc. If you aren't actively doing research, what kinds of scientific questions do you find interesting?
+
+Something I find particularly interesting as of lately has to with climate change. For example how much carbon removal do we need to do by a certain time to help mitigate the extreme climate temperature increase. 
+
+# AMW: I think we can work with this - NOAA has a lot of open data!
+
+2. What are you hoping to get out of class?
+
+Overall a better understanding of how to use R in research.
+Along with a better understanding of how biological research is compiled and analyzed. 
+
+3. Are there topics that aren't on the schedule that you'd be interested to see? 
+
+For the scope of this course I am interested in what I have seen thus far, looking ahead at the course material. However with my current level of understanding I do not have any thing to add at this moment. 

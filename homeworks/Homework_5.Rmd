@@ -1,0 +1,8 @@
+#Make a function that reads in data and does some sort of manipulation of it. Undergrads, use the surveys dataset. Graduates, use your own data. Any manipulation is fine: selection, filtering, value removal.
+
+```
+Answer
+```
+
+
+
